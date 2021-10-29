@@ -57,7 +57,8 @@ def move():
 
     for target in targets:
         if not inside(target):
-            return
+            targets[targets.index(target)].x = 200 # haciendo que el juego nunca termine
+
 
     ontimer(move, 50)
 
